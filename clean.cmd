@@ -1,0 +1,1 @@
+del *.aux *.out *.dvi *.log *.gz *.nav *.snm *.toc *.vrb *.xdv *.fls *.bbl *.bcf *.blg

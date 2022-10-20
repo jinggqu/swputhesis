@@ -105,11 +105,16 @@
 \setmonofont{Courier New}
 % 利用 \pkg{ctex} 宏包设置中文字体。设置正文字体为思源宋体(SC:简体)；
 % 设置 \cs{song} 为思源宋体； 设置 \cs{hei} 为思源黑体。
-\setCJKmainfont{Source Han Serif CN}
-\setCJKsansfont{Source Han Sans CN}
-\setCJKmonofont{Source Han Sans CN} % 避免 warning
-\setCJKfamilyfont{song}{Source Han Serif CN}
-\setCJKfamilyfont{hei}{Source Han Sans CN}
+% \setCJKmainfont{Source Han Serif CN}
+% \setCJKsansfont{Source Han Sans CN}
+% \setCJKmonofont{Source Han Sans CN} % 避免 warning
+% \setCJKfamilyfont{song}{Source Han Serif CN}
+% \setCJKfamilyfont{hei}{Source Han Sans CN}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{SimHei} % 避免 warning
+\setCJKfamilyfont{song}{SimSun}
+\setCJKfamilyfont{hei}{SimHei}
 
 % ^^A ==========================================================================
 % 行距:1.25倍
@@ -198,9 +203,9 @@
 % 论文信息表标题栏：黑体 (英文Arial)， 小三。
 % 注意 parbox 必须指定 contentpos，否则会出现并排的 box 错位的现象。
 \newcommand{\swpu@zhcoverformat}[3]{%
-\parbox[#1][#2][c]{3.71cm}%
+\parbox[#1][#2][c]{3.5cm}%
 {\zihao{-3}\sffamily\selectfont
-\makebox[3.2cm][s]{#3 ：}}
+\makebox[3.2cm][s]{#3 }}
 }
 
 % 论文信息表用户填写内容：黑体 (英文Arial)，四号 (14 bp)，左对齐，字符间距加宽 3 bp,
@@ -211,7 +216,7 @@
 % 下划线、蓝色（RGB：0,108/255,165/255）
 % 注意 parbox 必须指定 contentpos，否则会出现并排的 box 错位的现象。
 \newcommand{\swpu@zhinfoformat}[3]{%
-    \parbox[#1][#2][c]{12cm}{%
+    \parbox[#1][#2][c]{7.3cm}{%
         \zihao{4}\ziju{0.3}\sffamily%
         \linespread{1.7}\selectfont
     \CJKunderline[thickness=1bp, format=\color[rgb]{0,0.424,0.647}, textformat=\color[rgb]{0,0.424,0.647}]{#3 \hfill}}%
@@ -222,16 +227,18 @@
 % 图片的基线在其底部，为了和字体对齐，我们需要用 \cs{vcenter} 调整其基线到中部。
 \newcommand{\swpu@makezhtitle}{%
 {\zihao{5}\sffamily\bfseries\selectfont
-$\vcenter{\hbox{\includegraphics[height=1.94cm]{swpu_logo.jpg}}}$%
+$\vcenter{\hbox{\includegraphics[height=1.94cm]{fig/swpu_logo.jpg}}}$%
 \hspace{0.68cm}%
 图书分类号：\swpu@clc\hfill%
 学校代码：10615
 \vspace{2.2cm}\par}
-\includegraphics[height=1.22cm]{swpu.jpg} % 学校图片
+\includegraphics[height=1.22cm]{fig/swpu.jpg} % 学校图片
 \vspace{0.83cm}\par
-\includegraphics[height=1.83cm]{doctor_thesis_logo.jpg} % 学位论文图片
+% \includegraphics[height=1.83cm]{fig/doctor_thesis_logo.jpg} % 学位论文图片
+\includegraphics[height=1.83cm]{fig/master_thesis_logo.jpg} % 学位论文图片
 \vspace{2cm}\par
 % 论文信息。不用表格，因为表格不好调单元高度，也不好设置垂直对齐方式。
+% \hspace{2em}
 \swpu@zhcoverformat{t}{2cm}{论文题目}%
 \swpu@zhinfoformat{t}{2cm}{\swpu@ctitle}
 
