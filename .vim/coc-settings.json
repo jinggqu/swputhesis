@@ -1,0 +1,8 @@
+{
+  "cSpell.words": [
+    "hyperref"
+  ],
+  "texlab.build.args": [
+      "-pdflatex=xelatex"
+  ]
+}

@@ -1,0 +1,349 @@
+% !TEX root = ../swputhesis.tex
+\chapter{论文格式要求}
+
+% ------------------------------------------------------------------------------
+\section{正文字体与段落}
+
+\begin{enumerate}
+	\item 正文字体： 小四号；
+	\item 中文：宋体；
+	\item 西文： Times New Roman；
+	\item 行距 1.25 倍；
+	\item 段前段后 0 行；
+	\item 全文首行缩进 2 字符；
+	\item 标点符号用全角 (学校未规定)。
+\end{enumerate}
+
+\subsection{字库}
+
+本模板具体使用的中文字库是 Adobe 和 Google 合作开发的开源字体 —— 思源系列，
+比 Word 里预装的中易宋体 (SimSun) 要好看一些。
+此外一般高校论文模板都没有规定西文无衬线体应该用什么字体，有些直接使用黑体处理西文，
+本模板采用 Arial 这一在科技论文广泛流行的西文无衬线体，
+比直接用黑体要好看。
+
+\textsf{排版知识：} 中西文字体类型应该搭配使用，不应该混用衬线和无衬线体，
+正确搭配如~宋体 + Times New Roman，黑体 + Arial，
+而不应该出现~黑体 + Times New Roman (常见错误)。
+
+\subsection{字体测试}
+
+\begin{enumerate}
+	\item 中文衬线体： 思源宋体
+	\item 西文衬线体： Times New Roman，1234567890
+	\item 中文无衬线体： \textsf{思源黑体}
+	\item 西文无衬线体： \textsf{Arial，1234567890}
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+\section{页面设置}
+
+\subsection{尺寸要求}
+
+\begin{enumerate}
+	\item A4纸张；
+	\item 四边页边距均为 2.5 cm；
+	\item 页眉顶部到纸张顶部距离 1.5 cm；
+	\item 页脚到纸张底部距离 1.75 cm。
+\end{enumerate}
+
+\subsection{页眉页码}
+
+\begin{enumerate}
+	\item 页码格式：小五号，Time New Roman，居中；
+	\item 页眉格式：五号宋体，居中；
+	\item 摘要、目录、符号表的页码用罗马数字，无页眉；
+	\item 正文页码用阿拉伯数字，页眉奇偶数不同；
+	\item 采用带圈数字脚注 (学校未规定，其他学校有规定)。
+\end{enumerate}
+
+脚注测试~\footnote{每页脚注从1开始，下一页编号清零，重新计数。}，见页脚。
+
+% ------------------------------------------------------------------------------
+\section{封面}
+
+专业与研究方向一致，见招生简章。
+
+% ------------------------------------------------------------------------------
+\section{摘要}
+
+摘要标题格式和章标题格式相同。
+
+中文摘要关键词与正文隔一行，顶格，小四黑体，但之后的内容用小四宋体。
+
+英文摘要关键词与正文隔一行，顶格，小四宋体加粗 (学校给的 Word 模板未统一，有些用黑体，有些直接用宋体)，
+之后内容用 Times New Roman。
+
+% ------------------------------------------------------------------------------
+\section{目录}
+
+目录格式：
+
+\begin{enumerate}
+	\item ``目录'' 标题格式同章标题格式，小二号、黑体、居中，段前 24 bp, 段后 18 bp；
+	\item 目录中的章标题格式：小四号、黑体；
+	\item 目录中的节标题格式：小四号、宋体。
+\end{enumerate}
+
+\textsf{排版知识：} 目录里各章节对应的页码不用统一字体，应该和其对应的章节格式相同，这样才能增加辨识度。
+
+目录包含：
+
+\begin{enumerate}
+	\item 正文章节题目 (到三级标题，即 1.1.1)；
+	\item 致谢；
+	\item 参考文献；
+	\item 附录 (可选)；
+	\item 攻读学位期间发表论文 (可选)；
+	\item 索引 (可选)。
+\end{enumerate}
+
+\textbf{注：}目录是否包含摘要、符号表和目录本身？ 学校未具体规定，其给的模板包含了。
+
+% ------------------------------------------------------------------------------
+\section{章节标题}
+
+\subsection{格式要求}
+
+章节标题的段前段后距离学校未规定。
+
+\begin{enumerate}
+	\item 只编号到三级标题，即1.1.1；
+	\item	章标题:小二，黑体 (英文 Arial )，居中，段前 24 bp, 段后 18 bp；
+	\item 一级节标题：小三，黑体 (英文 Arial )，左顶格，段前 24 bp，段后稍大于正文行距；
+	\item 二级节标题：四号，黑体 (英文 Arial )，左顶格，段前 12 bp，段后稍大于正文行距；
+	\item 章节序号与章节名间空一字；
+	\item 论文每章应另起一页；
+	\item 章标题字数一般在 15 字以内，不得使用标点符号。
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+\section{数学符号}
+
+\begin{enumerate}
+	\item 物理变量、常量采用斜体，如 $y$。 物理量符号作下标时也用斜体， 如$x_y$；
+	\item 计量单位采用正体。表达时刻应采用中文计量单位，
+				如 ``上午8点3刻''， 不能用 ``8h54min''；
+	\item 统一使用工程或国际单位，不可混用；
+	\item 数字一般用阿拉伯数字。
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+\section{公式}
+
+\subsection{格式要求}
+
+\begin{enumerate}
+	\item 公式字体学校未规定，本模板使用和正文一致的 Times New Roman；
+	\item 正文公式按章编号，并用 ``-'' 连接并加括号；
+\end{enumerate}
+
+\textbf{Tips：} 编辑模式下，公式环境的上方不应该加空行，否则在生成文档中会有额外空行。
+但为了区分正文和公式，可以公式前加入一行无内容的注释标识，公式后可以直接空行。
+但公式后不要将空行换成注释标识，那样会导致无缩进。
+
+\subsection{字体测试}
+
+英文斜体在公式中和正文中对比，保证都是Times New Roman。
+除了字母 \textit{z} 、$z$和数字，其他都差不多，
+这是因为公式字体使用的是 Times New Roman 的开源版本。
+
+公式中： $abcdefghijklmnopqrstuvwxyz1234567890$
+
+正文中：\textit{abcdefghijklmnopqrstuvwxyz}1234567890
+
+\subsection{段前段后间距测试}
+
+测试公式前长文字对公式段前距离的影响。
+%
+\begin{equation}  \label{eq:a}
+	f(x) = \int\frac{\sin x}{x}\,\mathrm{d}x
+\end{equation}
+
+测试公式段后距离。
+
+测试段文字：
+%
+\begin{equation}	\label{eq:b}
+	\Omega = \sin x + \log y
+\end{equation}
+
+多个公式连写时，应该用 gather 或 align 环境， 否则会出现公式间的间距不同
+(因为第一个公式前有一行文字，若该文字大于公式前缩进空白长度，会使用 displayskip，
+而后面的公式因为没有一行文字在前，会使用 displayshortskip)。
+%
+\begin{gather}
+	\lim x = \Gamma	\label{eq:c} \\
+	\frac{x}{y} = z	\label{eq:d}
+\end{gather}
+
+\subsection{公式引用}
+
+\begin{enumerate}
+	\item 引用一个公式： 见\cref{eq:a}；
+	\item 引用两个公式： 见\cref{eq:a,eq:b}；
+	\item 引用多个间断公式： 见\cref{eq:a,eq:b,eq:d}；
+	\item 引用多个连续公式： 见\cref{eq:a,eq:b,eq:c,eq:d}。
+\end{enumerate}
+
+注意和英文写作不同，cref 引用命令前不要加\~{}，否则会在 ``公式'' 前出现多余空格。
+
+《撰写规范》要求在公式后用破折号给第一次出现的物理量解释，样式很丑，在考虑要不要用，
+如果要用的话，可以定义一个环境命令调用这格式。
+
+\noindent 式中\hspace{\ccwd} $x$ —— 物理量含义，这一行要顶格无缩进；
+
+\hspace{\ccwd} $\Gamma$ —— 这一行要在原缩进基础上再缩进1个中文字符，保证垂向对齐；
+
+\hspace{\ccwd} $\Gamma_\ell$ ——
+但如果改变量较宽，就无法对齐，可能需要在破折号前预留个较宽的长度。
+
+% ------------------------------------------------------------------------------
+\section{图表}
+
+图表的允许位置建议设置为宽松的[htb]。
+
+\subsection{表格}
+
+表格格式要求：
+
+\begin{enumerate}
+	\item 表格不加左、右边线，即使用三线表；
+	\item	表序号用如``表1-1''；
+	\item 表序与表名之间空一个中文字符；
+	\item 表名不允许使用标点；
+	\item 表头统一单位加圆括号；
+	\item 数据空缺用破折号 ``——''占位；
+	\item 不允许使用 ``同上'' 之类写法。
+\end{enumerate}
+
+测试表格与表上面文字的间距。
+
+\begin{table}[htb]
+	\centering
+	\caption{表格测试}
+	\label{tab:a}
+	\begin{tabular}{cc}
+		\toprule
+		表格 & 1  \\
+		\midrule
+		测试 & 2  \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+测试表格与下面文字的间距。
+
+表格引用，见\cref{tab:a}。
+
+\subsection{图}
+
+格式要求：
+
+\begin{enumerate}
+	\item	图序号用如``图1-1''；
+	\item 图序与图名之间空一个中文字符；
+	\item 图题与插图不能分为两页。
+\end{enumerate}
+
+测试插入模式下的图与上面文字的间距：等于行距 (\the\textfloatsep)。
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{example-image-b}
+	\caption{图标题采用五号宋体}
+	\label{fig:a}
+\end{figure}
+
+测试插入模式下的图与下面文字的间距：略大于行距。
+
+图引用测试：
+
+\begin{enumerate}
+	\item	见\cref{fig:a}；
+	\item 两图引用：见\cref{fig:a,fig:b}；
+	\item 多图引用：见\cref{fig:a,fig:b,fig:c}。
+\end{enumerate}
+
+\clearpage
+
+测试浮动模式下的图与文字的间距：略大于行距。
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.7]{example-image-a}
+	\caption{测试两浮动体间的距离：等于行距}
+	\label{fig:b}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.7]{example-image-a}
+	\caption{图标题采用五号宋体}
+	\label{fig:c}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+\section{列表}
+
+使用 \textsf{enumerate} 宏包定制列表。
+
+\begin{enumerate}
+	\item 列表1
+	\item 列表2
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+\section{索引}
+
+
+% ------------------------------------------------------------------------------
+\section{参考文献}
+
+\subsection{格式要求}
+
+引用格式：
+
+\begin{enumerate}
+	\item 引用数字在右上角：小五号，Times New Roman；
+	\item 在文中直接说明时：小四号，Times New Roman。
+\end{enumerate}
+
+文献列表格式：
+
+\begin{enumerate}
+	\item 五号，宋体 + Times New Roman；
+	\item 1.25倍行距。
+\end{enumerate}
+
+\subsection{编译方式}
+
+采用 \textbf{biblatex + biber} 方式编译参考文献。
+
+biblatex 的优势例如： (引用刘海洋的知乎回答)
+
+\begin{enumerate}
+	\item 文献数据结构全面，可引用的内容更多。用 bibtex 一般只能引用编号，
+				配合 natbib 宏包和特定的 bst 可以引用作者、年代。
+				而 biblatex 还可以引用标题、URL或者其他你想引用的文献信息。
+				因为文献信息以较完整的数据结构保存在生成的 bbl 文件中，所以引用的内容更多。
+				这是相比 BibTeX 的一个基本设计上的不同；
+	\item 输出控制由 LaTeX 代码完成，开发容易。
+				bst 的语言比较晦涩，开发难度大一些，biblatex 开发就容易多了，
+				所以现在第三方 biblatex 格式出现得比较多，
+				用户自己调整相比改 bst 也容易一些。。
+	\item 文献提取与排序使用功能更强的 biber。
+				biber 支持 Unicode，支持按汉字排序，支持按文献标题排序、编辑甚至翻译者排序，等等，
+				这都是 BibTeX 无法提供的。
+\end{enumerate}
+
+但biblatex 开发晚得多，所以直接提供的功能也就多很多。
+当然，也因为出现得晚，期刊投稿接受的就相对少一些。
+
+\subsection{引用测试}
+
+一般引用的引用数字在右上角~\cite{knuth1984}，
+也可以与正文平排使用：见文献~\parencite{knuth1986}。
+
+引用列表格式使用的是 《gb7714-2015》
+见中文专著~\cite{liu2013}。

@@ -1,0 +1,52 @@
+\documentclass{swputhesis}
+\usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}  % after hyperref package
+
+\graphicspath{{figs/}} % 设置插图文件存放位置
+\addbibresource{thesis.bib} % 设置参考文献文件位置
+
+% 图书分类号：在 https://www.clcindex.com/ 查询
+\clc{TE319}
+\ctitle{论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题目}
+\etitle{TITLE TITLE TITLE TITLE TITLE TITLE}
+\cmajor{学科专业}
+\emajor{major}
+\research{研究方向}
+\cauthor{作者姓名}
+\eauthor{author name}
+\id{200000000001}
+\csupervisor{导师姓名}
+\esupervisor{supervisor name}
+\cdate{2021年6月}
+\edate{June, 2021}
+\ckeywords{西南石油大学，博士论文，模板}
+\ekeywords{swpu, phd thesis, template}
+
+\begin{document}
+
+% 封面
+\makecover
+
+% 摘要、目录页
+\frontmatter
+
+% 摘要
+\include{src/abstract}
+% 生成目录
+\tableofcontents
+
+% 正文
+\mainmatter
+
+% 这一章节主要是介绍和测试论文格式，也可以用于快速学习LaTeX写作的基本用法
+% 阅读完这一格式章节后删除这一行, 以及删除src/format.tex文件
+\include{src/format}
+
+\include{src/introduction}
+% \include{src/文件名}
+\include{src/conclusion}
+
+
+% 显示参考文献列表，并加参考文献加入目录
+\printbibliography[heading=bibintoc]
+\end{document}
