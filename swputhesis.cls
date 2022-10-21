@@ -375,8 +375,11 @@
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftbeforetoctitleskip}{24 bp}
 \renewcommand{\cftaftertoctitleskip}{18 bp}
-% 章标题：小四，黑体 (英文 Arial)，1.25倍行距；
+% 章标题：小四，黑体 (英文 Arial)，1.25倍行距； 设置页号不加粗，设置引线
 \renewcommand{\cftchapfont}{\zihao{-4}\sffamily}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\renewcommand{\cftchappagefont}{\normalfont} % 取消页码加粗
 \renewcommand{\cftbeforechapskip}{0bp} % 取消章节的段前距离
 % 一级节标题：小四，宋体 (英文 Times New Roman)，1.25倍行距。
 \renewcommand{\cftsecfont}{\zihao{-4}}
