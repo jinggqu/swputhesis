@@ -16,15 +16,15 @@
 ### 安装字体
 由于 Windows 附带的宋体与黑体仅有一个字重，因此在加粗时会使用假粗体，导致笔画粘连等问题，因此本模板采用思源宋体与思源黑体替换默认宋体与黑体。
 
-思源宋体：  
+**思源宋体**：  
 （推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/  
 清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/
 
-思源黑体：  
+**思源黑体**：  
 （推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/  
 清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/
 
-分别下载两种字体的所有字重后，在资源管理器中选中所有字体，右键选择**为所有用户安装**即可。
+分别下载两种字体的**所有字重**后，在资源管理器中选中所有字体，右键选择**为所有用户安装**即可。
 
 ## 使用方法
 
@@ -32,7 +32,7 @@
 在 `swputhesis.tex` 所在目录打开终端，执行 `xelatex swputhesis.tex`  即可。若编译成功，则会在当前目录生成 `swputhesis.pdf`。
 
 ### 在 VSCode 中编译
-首先需要安装 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 插件，打开 `swputhesis.tex` 时，左侧导航栏会出现 TeX 菜单，选择 Comman -> Build LaTeX Project -> **Recipe: latexmk (xelatex)** 即可编译。
+首先需要安装 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 插件，打开 `swputhesis.tex` 时，左侧导航栏会出现 TeX 菜单，选择 Command -> Build LaTeX Project -> **Recipe: latexmk (xelatex)** 即可编译。
 
 ## 参考文献管理
 
@@ -40,7 +40,7 @@
 
 ## 已知问题
 
-封面格式存在问题，正在调整中。欢迎提交 Pull Request。
+封面格式及目录等页面存在问题，欢迎提交 Pull Request。
 
 ## 免责申明
 
