@@ -1,13 +1,13 @@
 # 西南石油大学硕士学位论文 LaTeX 模板
 
-本项目基于 [qingbyin](https://github.com/qingbyin) 在制作的学位论文模板 [swputhesis](https://github.com/qingbyin/swputhesis)。在此表示感谢。
+本项目基于 [qingbyin](https://github.com/qingbyin) 在博士期间制作的学位论文模板 [swputhesis](https://github.com/qingbyin/swputhesis)。在此表示感谢。
 
 ## 效果预览
 见 [swputhesis.pdf](https://github.com/sudrizzz/swputhesis/blob/main/swputhesis.pdf)。
 
 ## 前置条件
 
-### 安装 TexLive
+### 安装 TeXLive
 请前往镜像站下载最新版 TeXLive，安装时可通过 customize 操作去除不需要的语言包（如韩语、德语等），以加快安装速度。
 
 （推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/CTAN/systems/texlive/Images/  
@@ -37,7 +37,7 @@
 为了方便配置中文参考文献和国标要求，使用 biblatex + biber 而不是默认的 BibTeX。
 
 ## 已知问题
-目前项目仍处于早期开发版本，封面格式等存在较多问题，欢迎提交 Pull Request。
+目前项目仍处于早期开发版本，封面格式等存在较多问题，欢迎提交 issue 和 pull request。
 
 ## 免责申明
 由于学校图书馆网站上说明只接受 Word 格式的学位论文文档
