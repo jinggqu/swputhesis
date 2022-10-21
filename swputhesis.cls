@@ -342,16 +342,18 @@
 \swpu@def@prm{ekeywords}{}
 
 % 中文摘要。
-\newenvironment{cabstract}{{摘\hspace{\ccwd}要}}{%
+
+\newenvironment{cabstract}{\chapter*{摘\hspace{\ccwd}要}}{%
   % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
   \thispagestyle{plain}
   % 关键字：隔一行，顶格，黑体
   \quad\par
   \noindent\textsf{关键词：} \swpu@ckeywords
+  \clearpage
 }
 
 % 英语摘要。
-\newenvironment{eabstract}{{Abstract}}{%
+\newenvironment{eabstract}{\chapter*{Abstract}}{%
   % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
   \thispagestyle{plain}
   % 关键字：隔一行，顶格
