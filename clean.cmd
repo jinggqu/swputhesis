@@ -1,1 +1,1 @@
-del *.aux *.out *.dvi *.log *.gz *.nav *.snm *.toc *.vrb *.xdv *.fls *.bbl *.bcf *.blg
+del /s *.aux *.bbl *.bcf *.blg *.idx *.ind *.lof *.lot *.out *.toc *.acn *.acr *.alg *.glg *.glo *.gls *.ist *.fls *.log *.nav *.snm *.fdb_latexmk *.synctex.gz *.run.xml *.xdv

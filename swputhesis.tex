@@ -2,7 +2,7 @@
 \usepackage{hyperref}
 \usepackage[nameinlink]{cleveref}  % after hyperref package
 
-\graphicspath{{figs/}} % 设置插图文件存放位置
+\graphicspath{figs/} % 设置插图文件存放位置
 \addbibresource{ref.bib} % 设置参考文献文件位置
 
 % 图书分类号：在 https://www.clcindex.com/ 查询
@@ -32,26 +32,34 @@
 
 % 摘要
 \include{src/abstract}
+
 % 生成目录
 \tableofcontents
 
 % 正文
 \mainmatter
 
-% 这一章节主要是介绍和测试论文格式，也可以用于快速学习LaTeX写作的基本用法
-% 阅读完这一格式章节后删除这一行, 以及删除src/format.tex文件
+% 这一章节主要是介绍和测试论文格式，也可以用于快速学习 LaTeX 写作的基本用法
+% 阅读完这一格式章节后删除这一行, 以及删除 src/format.tex 文件
 \include{src/format}
 
-\include{src/chapter1.tex}
-\include{src/chapter2.tex}
-\include{src/chapter3.tex}
-\include{src/chapter4.tex}
-\include{src/chapter5.tex}
-\include{src/chapter6.tex}
-\include{src/ack.tex}
-\include{src/resume.tex}
+% 正文部分，可自行添加章节
+\include{src/chapter1}
+\include{src/chapter2}
+\include{src/chapter3}
+\include{src/chapter4}
+\include{src/chapter5}
+\include{src/chapter6}
 
+\backmatter
+
+% 致谢
+\include{src/ack}
 
 % 显示参考文献列表，并加参考文献加入目录
 \printbibliography[heading=bibintoc]
+
+% 攻读硕士学位期间发表的论文及科研成果
+\include{src/resume}
+
 \end{document}
