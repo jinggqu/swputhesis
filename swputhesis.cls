@@ -77,20 +77,20 @@
 }
 % 作者信息：中英文姓名、学科专业、研究方向、学号。
 \swpu@def@prm{cauthor}{中文名}
-\swpu@def@prm{eauthor}{English Name}
+% \swpu@def@prm{eauthor}{English Name}
 \swpu@def@prm{cmajor}{学科专业中文名}
-\swpu@def@prm{emajor}{major}
+% \swpu@def@prm{emajor}{major}
 \swpu@def@prm{research}{研究方向}
 \swpu@def@prm{id}{学号}
 % 论文中英文题目。
 \swpu@def@prm{ctitle}{}
-\swpu@def@prm{etitle}{}
+% \swpu@def@prm{etitle}{}
 % 导师中英文姓名。
 \swpu@def@prm{csupervisor}{}
-\swpu@def@prm{esupervisor}{}
+% \swpu@def@prm{esupervisor}{}
 % 论文完成日期（中英文）。
 \swpu@def@prm{cdate}{}
-\swpu@def@prm{edate}{}
+% \swpu@def@prm{edate}{}
 % 图书分类号。
 \swpu@def@prm{clc}{}
 
@@ -260,29 +260,29 @@
   {\zihao{-3}\ziju{0.3}\sffamily\selectfont 论文完成时间：\swpu@cdate}
 }
 
-% 定义生成英文封面的宏命令。
-\newcommand{\swpu@makeentitle}{%
-  {\quad}\vspace{2cm}\par
-  {\zihao{1}\selectfont % 一号字体
-  Southwest Petroleum University\par
-  Doctoral Dissertation\par}
-  \vspace{5.2cm}\par
-  {\zihao{2}\selectfont
-  % 英文题目：二号字体，全部大写，Times New Roman
-  \swpu@etitle}
-  \vspace{5.2cm}\par
-  % 英文信息：小三，Times New Roman
-  {\zihao{-3}\selectfont
-  \begin{tabular}{l}
-  Candidate: \swpu@eauthor\par  \\
-  Speciality: \swpu@emajor\par  \\
-  Supervisor: \swpu@esupervisor\par
-  \end{tabular}
+% % 定义生成英文封面的宏命令。
+% \newcommand{\swpu@makeentitle}{%
+%   {\quad}\vspace{2cm}\par
+%   {\zihao{1}\selectfont % 一号字体
+%   Southwest Petroleum University\par
+%   Doctoral Dissertation\par}
+%   \vspace{5.2cm}\par
+%   {\zihao{2}\selectfont
+%   % 英文题目：二号字体，全部大写，Times New Roman
+%   \swpu@etitle}
+%   \vspace{5.2cm}\par
+%   % 英文信息：小三，Times New Roman
+%   {\zihao{-3}\selectfont
+%   \begin{tabular}{l}
+%   Candidate: \swpu@eauthor\par  \\
+%   Speciality: \swpu@emajor\par  \\
+%   Supervisor: \swpu@esupervisor\par
+%   \end{tabular}
 
-  \vspace{2cm}\par
-  \swpu@edate
-  }%
-}
+%   \vspace{2cm}\par
+%   \swpu@edate
+%   }%
+% }
 
 % 知识产权声明
 \newcommand{\swpu@makecopyright}{%
@@ -332,7 +332,7 @@
   \centering
   \swpu@makezhtitle
   \clearpage
-  \swpu@makeentitle
+%   \swpu@makeentitle
   \end{titlepage}
   \swpu@makecopyright
 }
