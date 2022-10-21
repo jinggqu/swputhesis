@@ -105,16 +105,11 @@
 \setmonofont{Courier New}
 % 利用 \pkg{ctex} 宏包设置中文字体。设置正文字体为思源宋体(SC:简体)；
 % 设置 \cs{song} 为思源宋体； 设置 \cs{hei} 为思源黑体。
-% \setCJKmainfont{Source Han Serif CN}
-% \setCJKsansfont{Source Han Sans CN}
-% \setCJKmonofont{Source Han Sans CN} % 避免 warning
-% \setCJKfamilyfont{song}{Source Han Serif CN}
-% \setCJKfamilyfont{hei}{Source Han Sans CN}
-\setCJKmainfont{SimSun}
-\setCJKsansfont{SimHei}
-\setCJKmonofont{SimHei} % 避免 warning
-\setCJKfamilyfont{song}{SimSun}
-\setCJKfamilyfont{hei}{SimHei}
+\setCJKmainfont{Source Han Serif CN}
+\setCJKsansfont{Source Han Sans CN}
+\setCJKmonofont{Source Han Sans CN} % 避免 warning
+\setCJKfamilyfont{song}{Source Han Serif CN}
+\setCJKfamilyfont{hei}{Source Han Sans CN}
 
 % ^^A ==========================================================================
 % 行距:1.25倍
@@ -168,7 +163,7 @@
 % 清除所有页眉页脚。
 \fancyhf{}
 % 奇数页(O)页眉居中(C), 五号宋体。
-\fancyhead[CO]{\zihao{5}\CJKfamily{song}\selectfont 西南石油大学博士研究生学位论文}
+\fancyhead[CO]{\zihao{5}\CJKfamily{song}\selectfont 西南石油大学专业学位硕士研究生学位论文}
 % 偶数页(E)居中(C)页眉, 五号宋体。
 \fancyhead[CE]{\zihao{5}\CJKfamily{song}\selectfont \swpu@ctitle}
 % 页眉线宽 1.5 bp。
@@ -203,9 +198,10 @@
 % 论文信息表标题栏：黑体 (英文Arial)， 小三。
 % 注意 parbox 必须指定 contentpos，否则会出现并排的 box 错位的现象。
 \newcommand{\swpu@zhcoverformat}[3]{%
-\parbox[#1][#2][c]{3.5cm}%
-{\zihao{-3}\sffamily\selectfont
-\makebox[3.2cm][s]{#3 }}
+  \parbox[#1][#2][c]{3.5cm}{
+    \zihao{-3}\sffamily\bfseries\selectfont
+    \makebox[3.2cm][s]{#3 }
+  }
 }
 
 % 论文信息表用户填写内容：黑体 (英文Arial)，四号 (14 bp)，左对齐，字符间距加宽 3 bp,
@@ -235,7 +231,7 @@ $\vcenter{\hbox{\includegraphics[height=1.94cm]{fig/swpu_logo.jpg}}}$%
 \includegraphics[height=1.22cm]{fig/swpu.jpg} % 学校图片
 \vspace{0.83cm}\par
 % \includegraphics[height=1.83cm]{fig/doctor_thesis_logo.jpg} % 学位论文图片
-\includegraphics[height=1.83cm]{fig/master_thesis_logo.jpg} % 学位论文图片
+\includegraphics[height=1.6cm]{fig/master_thesis_logo.jpg} % 学位论文图片 
 \vspace{2cm}\par
 % 论文信息。不用表格，因为表格不好调单元高度，也不好设置垂直对齐方式。
 % \hspace{2em}
