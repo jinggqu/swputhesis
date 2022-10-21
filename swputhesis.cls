@@ -359,8 +359,19 @@ Supervisor: \swpu@esupervisor\par
 % 关键字：隔一行，顶格
 \quad\par
 \noindent \textbf{Key words：} \swpu@ekeywords
-
 \clearpage
+}
+
+% 致谢
+\newenvironment{ack}{\chapter*{致\hspace{\ccwd}谢}}{%
+  % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
+  \thispagestyle{headings}
+}
+
+% 攻读硕士学位期间发表的论文及科研成果
+\newenvironment{resume}{\chapter*{攻读硕士学位期间发表的论文及科研成果}}{%
+  % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
+  \thispagestyle{headings}
 }
 
 % ^^A ==========================================================================
@@ -588,5 +599,6 @@ pdfauthor = \swpu@cauthor
 \crefmultiformat{table}{表~#2#1#3}{ 和~#2#1#3}{，#2#1#3}{ 和~#2#1#3}
 }
 \endinput
+}
 %%
 %% End of file `swputhesis.cls'.

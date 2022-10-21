@@ -1,9 +1,9 @@
 # 西南石油大学硕士学位论文 LaTeX 模板
 
-`SWPUThesis` 是 [qingbyin](https://github.com/qingbyin) 师兄在写博士论文时制作的 `LaTeX` 学位论文模板。在此表示感谢。
+`swputhesis` 是 [qingbyin](https://github.com/qingbyin) 师兄在写博士论文时制作的 `LaTeX` 学位论文模板。在此表示感谢。
 
 ## 效果预览
-见 [swputhesis.pdf](https://github.com/sudrizzz/SWPUThesis/blob/main/swputhesis.pdf)。
+见 [swputhesis.pdf](https://github.com/sudrizzz/swputhesis/blob/main/swputhesis.pdf)。
 
 ## 前置条件
 
@@ -16,11 +16,11 @@
 ### 安装字体
 由于 Windows 附带的宋体与黑体仅有一个字重，因此在加粗时会使用假粗体，导致笔画粘连等问题，因此本模板采用思源宋体与思源黑体替换默认宋体与黑体。
 
-思源宋体：
+思源宋体：  
 （推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/  
 清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/
 
-思源黑体：
+思源黑体：  
 （推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/  
 清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/
 
@@ -48,3 +48,7 @@
 (见[学位论文提交系统常见问题](https://lib.swpu.edu.cn/95_80/mason/0317x/faq.html?q=13#a))，
 本模板不能保证在提交学校审查时能一切顺利，
 请提前咨询相关负责老师。
+
+## 参考资料
+
+1. [一份不太简短的 LaTeX2ε 介绍](https://mirrors.bfsu.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf)
