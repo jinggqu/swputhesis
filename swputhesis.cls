@@ -76,6 +76,7 @@
   \csname #1\endcsname{#2}%
 }
 % 作者信息：中英文姓名、学科专业、研究方向、学号。
+\swpu@def@prm{degree}{}
 \swpu@def@prm{cauthor}{中文名}
 % \swpu@def@prm{eauthor}{English Name}
 \swpu@def@prm{cmajor}{学科专业中文名}
@@ -163,7 +164,7 @@
   % 清除所有页眉页脚。
   \fancyhf{}
   % 奇数页(O)页眉居中(C), 五号宋体。
-  \fancyhead[CO]{\zihao{5}\CJKfamily{song}\selectfont 西南石油大学专业学位硕士研究生学位论文}
+  \fancyhead[CO]{\zihao{5}\CJKfamily{song}\selectfont 西南石油大学\swpu@degree 硕士研究生学位论文}
   % 偶数页(E)居中(C)页眉, 五号宋体。
   \fancyhead[CE]{\zihao{5}\CJKfamily{song}\selectfont \swpu@ctitle}
   % 页眉线宽 1.5 bp。
@@ -231,8 +232,7 @@
   \vspace{2.2cm}\par}
   \includegraphics[height=1.22cm]{fig/swpu.jpg} % 学校图片
   \vspace{0.83cm}\par
-  % \includegraphics[height=1.83cm]{fig/doctor_thesis_logo.jpg} % 学位论文图片
-  \includegraphics{fig/master_thesis_logo.jpg} % 学位论文图片 
+  \includegraphics[height=1.75cm]{fig/\swpu@degree .jpg} % 学位论文图片 
   \vspace{2cm}\par
   % 论文信息。不用表格，因为表格不好调单元高度，也不好设置垂直对齐方式。
   % \hspace{2em}
@@ -326,14 +326,19 @@
 
 % 定义 \cs{makecover}，调用 \cs{swpu@makezhtitle}, \cs{swpu@makeentitle}
 % 分别生成中、英文封面。
-\def\makecover{%
+% \def\makecover{%
+%   \pagestyle{empty}
+%   \begin{titlepage}
+%   \centering
+%   \swpu@makezhtitle
+%   \clearpage
+% %   \swpu@makeentitle
+%   \end{titlepage}
+%   \swpu@makecopyright
+% }
+
+\def\makecopyright{%
   \pagestyle{empty}
-  \begin{titlepage}
-  \centering
-  \swpu@makezhtitle
-  \clearpage
-%   \swpu@makeentitle
-  \end{titlepage}
   \swpu@makecopyright
 }
 

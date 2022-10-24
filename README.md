@@ -10,19 +10,14 @@
 ### 安装 TeXLive
 请前往镜像站下载最新版 TeXLive，安装时可通过 customize 操作去除不需要的语言包（如韩语、德语等），以加快安装速度。
 
-（推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/CTAN/systems/texlive/Images/  
-清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/
+下载地址：[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/CTAN/systems/texlive/Images/)、[清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
 
 ### 安装字体
-由于 Windows 附带的宋体与黑体仅有一个字重，因此在加粗时会使用假粗体（AutoFakeBold），导致笔画粘连等问题，因此本模板采用思源宋体与思源黑体替换默认宋体与黑体。
+由于 Windows 附带的宋体与黑体仅有一个字重，因此在加粗时会使用假粗体（AutoFakeBold），导致笔画粘连等问题；且毕业论文模板并未声明宋体与黑体的具体类型，因此本模板采用思源宋体与思源黑体替换默认宋体与黑体。
 
-**思源宋体**：  
-（推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/  
-清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/
+**思源宋体**：[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/)、[清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/SubsetOTF/CN/)
 
-**思源黑体**：  
-（推荐）北京外国语大学镜像站：https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/  
-清华大学镜像站：https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/
+**思源黑体**：[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/)、[清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/SubsetOTF/CN/)
 
 分别下载两种字体的**所有字重**后，在资源管理器中选中所有字体，右键选择**为所有用户安装**即可。
 
@@ -37,13 +32,11 @@
 为了方便配置中文参考文献和国标要求，使用 biblatex + biber 而不是默认的 BibTeX。
 
 ## 已知问题
-目前项目仍处于早期开发版本，封面格式等存在较多问题，欢迎提交 issue 和 pull request。
+目前项目仍处于早期开发版本，欢迎提交 issue 和 pull request。
+1. 由于学术硕士和专业硕士封面存在较大差异，建议使用 Word 单独制作封面；
 
 ## 免责申明
-由于学校图书馆网站上说明只接受 Word 格式的学位论文文档
-(见[学位论文提交系统常见问题](https://lib.swpu.edu.cn/95_80/mason/0317x/faq.html?q=13#a))，
-本模板不能保证在提交学校审查时能一切顺利，
-请提前咨询相关负责老师。
+由于学校图书馆网站上说明只接受 Word 格式的学位论文文档（见[学位论文提交系统常见问题](https://lib.swpu.edu.cn/95_80/mason/0317x/faq.html?q=13#a)），本模板不能保证在提交学校审查时能一切顺利，请提前咨询相关负责老师。
 
 ## 参考资料
 
