@@ -24,15 +24,14 @@
 ## 使用方法
 ### 手动编译（较硬核，不推荐）
 
-1. 使用 `latexmk` 编译
-在 swputhesis.tex 所在目录打开终端，执行如下命令即可编译。  
+1. 使用 `latexmk` 编译  
+执行如下命令即可编译。  
 ```shell
 latexmk -synctex=1 -interaction=nonstopmode -file-line-error -xelatex swputhesis.tex
 ```
 
-2. 使用 `xelatex` 编译
+1. 使用 `xelatex` 编译  
 如果使用 `xelatex` 编译项目，那么需要按照 `xelatex -> biber -> xelatex -> xelatex` 的顺序依次调用 `xelatex` 与 `biber` 命令行工具，命令如下。
-
 ```shell
 # 第一步 xelatex
 xelatex -no-pdf --interaction=nonstopmode swputhesis.tex
