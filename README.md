@@ -30,7 +30,7 @@
 latexmk -synctex=1 -interaction=nonstopmode -file-line-error -xelatex swputhesis.tex
 ```
 
-1. 使用 `xelatex` 编译  
+2. 使用 `xelatex` 编译  
 如果使用 `xelatex` 编译项目，那么需要按照 `xelatex -> biber -> xelatex -> xelatex` 的顺序依次调用 `xelatex` 与 `biber` 命令行工具，命令如下。
 ```shell
 # 第一步 xelatex
