@@ -52,10 +52,10 @@ xelatex --interaction=nonstopmode swputhesis.tex
 
 首先需要安装 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 插件。打开 swputhesis.tex 时，左侧导航栏会出现 TeX 菜单。
 
-1. 使用 `latexmk` 编译
+1. 使用 `latexmk` 编译  
 点击 TeX 菜单，选择 COMMANDS -> Build LaTeX Project -> **Recipe: latexmk** 即可编译。
 
-2. 使用 `xelatex` 编译
+2. 使用 `xelatex` 编译  
 点击 TeX 菜单，选择 COMMANDS -> Build LaTeX Project -> **Recipe: xelatex -> biber -> xelatex\*2** 即可编译。
 
 ## 参考文献管理
