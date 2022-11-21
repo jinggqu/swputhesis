@@ -104,17 +104,19 @@
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
 \setmonofont{Courier New}
-% 利用 \pkg{ctex} 宏包设置中文字体。设置正文字体为思源宋体(SC:简体)；
-% 设置 \cs{song} 为思源宋体； 设置 \cs{hei} 为思源黑体。
-\setCJKmainfont{Source Han Serif CN}
-\setCJKsansfont{Source Han Sans CN}
-\setCJKmonofont{Source Han Sans CN} % 避免 warning
-\setCJKfamilyfont{song}{Source Han Serif CN}
-\setCJKfamilyfont{hei}{Source Han Sans CN}
+% 利用 \pkg{ctex} 宏包设置中文字体。设置正文字体为中易宋体(SC:简体)；
+% 设置 \cs{song} 为中易宋体； 设置 \cs{hei} 为中易黑体。
+\setCJKmainfont{SimSun}[AutoFakeBold, AutoFakeSlant]
+\setCJKsansfont{SimHei}[AutoFakeBold, AutoFakeSlant]
+\setCJKmonofont{SimHei} % 避免 warning
+\setCJKfamilyfont{song}{SimSun}
+\setCJKfamilyfont{hei}{SimHei}
 
 % ^^A ==========================================================================
-% 行距:1.25倍
-\linespread{1.25}
+% Word 模板中行距为 1.25 倍，而 Word 里的 n 倍行距是在“单倍行距”的基础上乘以倍数
+% 所以 Word 里的 1.25 倍行距，是字号的 1.3 * 12.5 倍（假设中易字体）
+% LaTeX 默认行距为 1.2 倍，为了与 Word 模板视觉上保持一致，这里设置为 1.3 * 1.25 / 1.2 = 1.354 倍
+\linespread{1.354}\selectfont
 % 字体、行距设置立即生效。
 \selectfont
 % TODO: Check that
