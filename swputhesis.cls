@@ -398,11 +398,11 @@
 
 % ^^A ==========================================================================
 % {章节标题}
-% 最多允许两级节标题编号, 即1.1.1
-\setcounter{secnumdepth}{2}
+% 根据论文模板，允许三级节标题编号, 即 1.1.1.1
+\setcounter{secnumdepth}{3}
 % 章标题:小二，黑体 (英文Arial)，居中，1.25 倍行距 (只影响标题内行距，不影响标题与正文的行距)
 % (注: LaTeX 的章节行距不影响段前段后间距，而 Word 的行距设置会影响段前段后距离)；
-% 段前 24 bp, 段后 18 bp (学校未规定）；章序号与章节名间空一字。
+% 段前 12 pt, 段后 36 pt；章序号与章节名间空一字。
 \ctexset{
   chapter = {
     % 注：若要调整行距 linespread, 还需要额外加 selectfont 才能生效。
@@ -413,9 +413,11 @@
     titleformat = {},
     % 章节名与其后标题内容间的间距：1个汉字字符。
     aftername = \hspace{\ccwd},
+    % 设置章编号为阿拉伯数字，如第1章。
+    number = \arabic{chapter},
     name = {第,章},
-    beforeskip = 24 bp, % 段前间距
-    afterskip = 18 bp, % 段后间距
+    beforeskip = 12 pt, % 段前间距
+    afterskip = 36 pt, % 段后间距
     % book类的标题与正文的距离除了由 beforeskip 和 afterskip 选项设置的垂直间距外
     % 还会有一些多余的间距(该间距大小受行距影响)，fixskip 选项用于抑制这些多余间距。
     fixskip = true,
@@ -430,38 +432,38 @@
   section = {
     format = \zihao{-3}\sffamily\raggedright,
     aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
-    beforeskip = 24 bp,
-    afterskip = \swpu@linegap,
+    beforeskip = 12 pt,
+    afterskip = 12 pt,
     fixskip = false, % 不抑制多余的垂直间距。
     afterindent = true % 设置节标题后首段缩进。
   }
 }
 
 % 二级节标题：四号，黑体，左顶格，1.25 倍行距，
-% 段前 12 bp，段后与正文行距相同 (6 bp)；
+% 段前 12 pt，段后 12 pt；
 % 但不抑制自动增加的段前段后多余的垂直间距，这样能稍大于正文行距离。
 % 章序号与章节名间空一字。
 \ctexset{
   subsection = {
     format = \zihao{4}\sffamily\raggedright,
     aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
-    beforeskip =12 bp,
-    afterskip = \swpu@linegap,
+    beforeskip = 12 pt,
+    afterskip = 12 pt,
     fixskip = false, % 不抑制多余的垂直间距。
     afterindent = true % 设置节标题后首段缩进。
   }
 }
 
 % 三级节标题：小四号，黑体，左顶格，1.25 倍行距 (只影响标题内行距，不影响标题与正文的行距)
-% 段前 6 bp，段后 6 bp, 抑制多余的垂直间距，
+% 段前 12 pt，段后 12 pt；抑制多余的垂直间距，
 % 这样就等价于设置：无段前段后并与正文内容为 1.25 倍行距；
 % 章序号与章节名间空一字。
 \ctexset{
   subsubsection = {
     format = \zihao{-4}\sffamily\raggedright,
     aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
-    beforeskip = \swpu@linegap,
-    afterskip = \swpu@linegap,
+    beforeskip = 12 pt,
+    afterskip = 12 pt,
     fixskip = true, % 抑制多余的垂直间距。(保持为行间距)
     afterindent = true % 设置节标题后首段缩进。
   }
