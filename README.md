@@ -17,6 +17,7 @@
 
 **下述编译方式都已配置好，无需再次配置，直接使用即可。相关配置见项目路径下 `.vscode/settings.json`。**  
 
+点击 VSCode 菜单栏左上角的 **文件（File）** 按钮，选择 **打开文件夹（Open Folder）** 选项打开项目所在文件夹，即可开始使用项目。  
 首先需要安装 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 插件。打开 swputhesis.tex 时，左侧导航栏会出现 TeX 菜单。
 
 - 使用 `latexmk` 编译  
