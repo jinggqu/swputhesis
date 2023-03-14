@@ -29,7 +29,7 @@
 % 检查是否使用 \XeTeX 编译，若没有则报错。
 \RequirePackage{ifxetex}
 \ifxetex\else
-\ClassError{swputhesis}{XeLaTeX is required to compile the document}{}
+  \ClassError{swputhesis}{XeLaTeX is required to compile the document}{}
 \fi
 
 % 加载支持中文的文档类
@@ -227,11 +227,11 @@
 % 图片的基线在其底部，为了和字体对齐，我们需要用 \cs{vcenter} 调整其基线到中部。
 \newcommand{\swpu@makezhtitle}{%
   {\zihao{5}\sffamily\bfseries\selectfont
-  $\vcenter{\hbox{\includegraphics[height=1.94cm]{fig/swpu_logo.jpg}}}$%
-  \hspace{0.68cm}%
-  图书分类号：\swpu@clc\hfill%
-  学校代码：10615
-  \vspace{2.2cm}\par}
+      $\vcenter{\hbox{\includegraphics[height=1.94cm]{fig/swpu_logo.jpg}}}$%
+      \hspace{0.68cm}%
+      图书分类号：\swpu@clc\hfill%
+      学校代码：10615
+      \vspace{2.2cm}\par}
   \includegraphics[height=1.22cm]{fig/swpu.jpg} % 学校图片
   \vspace{0.83cm}\par
   \includegraphics[height=1.75cm]{fig/\swpu@degree .jpg} % 学位论文图片 
@@ -288,11 +288,12 @@
 
 % 知识产权声明
 \newcommand{\swpu@makecopyright}{%
+  \pdfbookmark{知识产权声明}{swpu@makecopyright}
   \quad\par
   \quad\par
   \begin{center}
-  \sffamily\selectfont
-  西南石油大学研究生学位论文知识产权声明书及 \par 学位论文版权使用授权书
+    \sffamily\selectfont
+    西南石油大学研究生学位论文知识产权声明书及 \par 学位论文版权使用授权书
   \end{center}
   \hspace{2\ccwd}本人完全了解学校有关保护知识产权的规定，
   即：研究生在校攻读学位期间论文工作的知识产权单位属于西南石油大学。
@@ -313,8 +314,8 @@
   \quad\par
   \quad\par
   \begin{center}
-  \sffamily\selectfont
-  西南石油大学研究生学位论文独创性声明\par
+    \sffamily\selectfont
+    西南石油大学研究生学位论文独创性声明\par
   \end{center}
   \hspace{2\ccwd}本人声明：所呈交的研究生学位论文是本人在导师指导下进行的研究工作及取得的研究成果。
   据我所知，除了文中特别加以标注和致谢的地方外，本论文不包含其他人已经发表或撰写过的研究成果，
@@ -349,7 +350,9 @@
 \swpu@def@prm{ekeywords}{}
 
 % 中文摘要。
-\newenvironment{cabstract}{\chapter*{摘\hspace{\ccwd}要}}{%
+\newenvironment{cabstract}{\chapter*{摘\hspace{\ccwd}要}}{
+  % 添加摘要到PDF书签
+  \pdfbookmark{摘要}{cabstract}
   % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
   \thispagestyle{plain}
   % 关键字：隔一行，顶格，黑体
@@ -359,7 +362,9 @@
 }
 
 % 英语摘要。
-\newenvironment{eabstract}{\chapter*{Abstract}}{%
+\newenvironment{eabstract}{\chapter*{Abstract}}{
+  % 添加摘要到PDF书签
+  \pdfbookmark{Abstract}{eabstract}
   % 设置无页眉有页码, 注意必须使用 thispagestyle 设置才有效。
   \thispagestyle{plain}
   % 关键字：隔一行，顶格
@@ -376,10 +381,10 @@
 % 目录项前面的引导点默认是西文的句号，它与基线平齐。而中文排版需要将其修改为居中的中文省略号。
 \renewcommand{\cftdot}{…}
 \renewcommand{\cftdotsep}{0}
-% 修改目录标题与章标题格式相同：小二，黑体 (英文Arial)，居中
+% 修改目录标题与章标题格式相同：小三，黑体 (英文Arial)，居中
 % 段前 24 bp, 段后 18 bp (学校未规定）
 \renewcommand{\contentsname}{目\hspace{\ccwd}录}
-\renewcommand{\cfttoctitlefont}{\hfill\zihao{-2}\sffamily}
+\renewcommand{\cfttoctitlefont}{\hfill\zihao{-3}\sffamily}
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftbeforetoctitleskip}{24 bp}
 \renewcommand{\cftaftertoctitleskip}{18 bp}
@@ -422,7 +427,7 @@
     % 还会有一些多余的间距(该间距大小受行距影响)，fixskip 选项用于抑制这些多余间距。
     fixskip = true,
     afterindent = true % 设置章标题后首段缩进
-  }
+   }
 }
 
 % 一级节标题：小三，黑体，左顶格，1.25 倍行距，段前 24 bp，段后与正文行距相同 (6 bp)；
@@ -436,7 +441,7 @@
     afterskip = 12 pt,
     fixskip = false, % 不抑制多余的垂直间距。
     afterindent = true % 设置节标题后首段缩进。
-  }
+   }
 }
 
 % 二级节标题：四号，黑体，左顶格，1.25 倍行距，
@@ -445,13 +450,13 @@
 % 章序号与章节名间空一字。
 \ctexset{
   subsection = {
-    format = \zihao{4}\sffamily\raggedright,
-    aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
-    beforeskip = 12 pt,
-    afterskip = 12 pt,
-    fixskip = false, % 不抑制多余的垂直间距。
-    afterindent = true % 设置节标题后首段缩进。
-  }
+      format = \zihao{4}\sffamily\raggedright,
+      aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
+      beforeskip = 12 pt,
+      afterskip = 12 pt,
+      fixskip = false, % 不抑制多余的垂直间距。
+      afterindent = true % 设置节标题后首段缩进。
+    }
 }
 
 % 三级节标题：小四号，黑体，左顶格，1.25 倍行距 (只影响标题内行距，不影响标题与正文的行距)
@@ -460,13 +465,13 @@
 % 章序号与章节名间空一字。
 \ctexset{
   subsubsection = {
-    format = \zihao{-4}\sffamily\raggedright,
-    aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
-    beforeskip = 12 pt,
-    afterskip = 12 pt,
-    fixskip = true, % 抑制多余的垂直间距。(保持为行间距)
-    afterindent = true % 设置节标题后首段缩进。
-  }
+      format = \zihao{-4}\sffamily\raggedright,
+      aftername = \hspace{\ccwd}, % 节名与其后标题内容间的间距：1个汉字字符。
+      beforeskip = 12 pt,
+      afterskip = 12 pt,
+      fixskip = true, % 抑制多余的垂直间距。(保持为行间距)
+      afterindent = true % 设置节标题后首段缩进。
+    }
 }
 
 % ^^A ==========================================================================
