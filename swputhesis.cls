@@ -304,7 +304,7 @@
   本学位论文属于\par
   1、保密（\hspace{2\ccwd}），在\hspace{2\ccwd}年解密后适用本授权书。\par
   2、不保密（ \hspace{2\ccwd}）\par
-  (请在以上相应括号内打 `` √ ''）\par
+  （请在以上相应括号内打 `` √ ''）\par
   \quad\par
   \hspace{7.5\ccwd}学位论文作者签名：\underline{\hspace{6\ccwd}}%
   指导教师签名：\underline{\hspace{6\ccwd}}\par
