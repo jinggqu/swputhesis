@@ -4,7 +4,13 @@
 
 ## 效果预览
 
-见 [swputhesis.pdf](https://github.com/sudrizzz/swputhesis/blob/main/swputhesis.pdf)。
+示例 PDF 文件见 [swputhesis.pdf](https://github.com/sudrizzz/swputhesis/blob/main/swputhesis.pdf)。
+
+![](./fig/%E8%AE%BA%E6%96%87%E9%A2%84%E8%A7%88%E5%9B%BE1.png)
+
+---
+
+![](./fig/%E8%AE%BA%E6%96%87%E9%A2%84%E8%A7%88%E5%9B%BE2.png)
 
 ## 前置条件
 
@@ -76,13 +82,6 @@ xelatex --interaction=nonstopmode swputhesis.tex
 | /src/resume.tex    | 攻读硕士学位期间发表的论文及科研成果                                                                                                                                                                   |
 | /.vscode/\*        | 模板在 VSCode 中的配置文件，如无必要请勿修改                                                                                                                                                           |
 
-## 论文预览
-
-![](./fig/%E8%AE%BA%E6%96%87%E9%A2%84%E8%A7%88%E5%9B%BE1.png)
-
----
-
-![](./fig/%E8%AE%BA%E6%96%87%E9%A2%84%E8%A7%88%E5%9B%BE2.png)
 
 ## 已知问题
 
